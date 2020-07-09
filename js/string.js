@@ -21,3 +21,9 @@ function stringToArray (str) {
   return str.split(' ');
 }
 console.log(stringToArray('Robin Singh'));
+
+//task 4
+function getNumOfCharacters(str, num) {
+  return str.slice(0, num);
+}
+console.log(getNumOfCharacters("Robin Singh",4));

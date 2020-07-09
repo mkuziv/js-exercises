@@ -35,8 +35,16 @@ function isPalindrome2(str) {
 }
 console.log(isPalindrome2('madam'));
 
-//task4
+//task 4
 function alphabetOrder(str) {
   return str.split('').sort().join('');
 }
-console.log(alphabetOrder('alphabet'))
+console.log(alphabetOrder('alphabet'));
+
+//task 5
+function firstLetterUppercase(str) {
+  return str.split(' ')
+  .map(item => item = item[0].toUpperCase() + item.substring(1))
+  .join(' ');
+}
+console.log(firstLetterUppercase('the quick brown fox'));

@@ -17,3 +17,18 @@ function sortNumber(...arg) {
   return str;
 }
 console.log(sortNumber(1, 8, 0, -7, 100));
+
+//task 4
+function largestNumber1(a, b, c, d, e){
+  alert(Math.max(a, b, c, d, e));
+  
+  return Math.max(a, b, c, d, e);
+}
+console.log(largestNumber1(1, -3, 8, 0, 10));
+
+function largestNumber2(...args){  
+  alert(Math.max.call(...args));
+
+  return Math.max.call(...args);
+}
+console.log(largestNumber2(1, -3, 8, 0, 10));

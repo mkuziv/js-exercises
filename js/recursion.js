@@ -40,3 +40,11 @@ let sumArray =  function sum(arr) {
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6, 7]));
 
+function exponentNumber(x, n) {
+  if(n !== 0) {
+    return x * exponentNumber(x, n-1);    
+  } else {
+    return 1;
+  }
+}
+console.log(exponentNumber(2, 3));

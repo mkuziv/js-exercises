@@ -40,3 +40,15 @@ function firstArrArg(arr, num) {
   return arr.slice(0, num);
 }
 console.log(firstArrArg([1, 2, 3], 3));
+
+//task 4
+function lastArrArg(arr, num) {
+  if (arr === null) {
+    return 0;
+  }
+  if (num === undefined) {
+    return arr[arr.length -1];
+  }
+  return arr.slice(-num);
+}
+console.log(lastArrArg([7, 9, 0, -2], 3));

@@ -30,3 +30,34 @@ function  lengthOfObject(obj) {
   return lengthOfObj;
 }
 console.log(lengthOfObject({name : "David Rayy",  sclass : "VI",  rollno : 12 }));
+
+//task 4
+var library = [ 
+  {
+      title: 'Bill Gates',
+      author: 'The Road Ahead',
+      readingStatus: true
+  },
+  {
+      title: 'Steve Jobs',
+      author: 'Walter Isaacson',
+      readingStatus: true
+  },
+  {
+      title: 'Mockingjay: The Final Book of The Hunger Games',
+      author: 'Suzanne Collins',
+      readingStatus: false
+  }];
+function showReadingStatus(arr){
+  return arr.map(item => {
+
+    if (item.readingStatus) {
+      return `Already read '${item.title}' by ${item.author}.`;
+    } else {
+      return `You still need to read '${item.title}' by ${item.author}.`;
+    }
+
+  })
+  .join(' ');
+}
+console.log(showReadingStatus(library));

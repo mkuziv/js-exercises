@@ -37,6 +37,13 @@ function getCurrentDate() {
     month = '0' + month;
   }
   
-  return `${day}-${month}-${year}`
+  return `${day}-${month}-${year}`;
 } 
 console.log(getCurrentDate());
+
+//task 4
+function triangleArea(a, b, c) {
+  let p = (a + b + c)/2;
+  return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+}
+console.log(triangleArea(5, 6, 7));
