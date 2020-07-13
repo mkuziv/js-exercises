@@ -24,4 +24,21 @@ function getMonthName(date){
 
   return monthNames[date.getMonth()];
 }
-console.log(getMonthName(new Date("11/13/2014")))
+console.log(getMonthName(new Date("11/13/2014")));
+
+//task 5
+function compareDates(d1, d2) {
+  let dateFirst = d1.getTime();
+  let dateSecond = d2.getTime()
+
+  if (dateFirst === dateSecond) {
+    return 'Date1 = Date2';
+  } else if (dateFirst < dateSecond) {
+    return 'Date1 < Date2';
+  } else {
+    return 'Date1 > Date2';
+  }
+}
+console.log(compareDates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:00')));
+console.log(compareDates(new Date('11/14/2013 00:01'), new Date('11/14/2013 00:00')));
+console.log(compareDates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:01')));

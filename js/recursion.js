@@ -40,6 +40,7 @@ let sumArray =  function sum(arr) {
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6, 7]));
 
+//task 5
 function exponentNumber(x, n) {
   if(n !== 0) {
     return x * exponentNumber(x, n-1);    
@@ -48,3 +49,16 @@ function exponentNumber(x, n) {
   }
 }
 console.log(exponentNumber(2, 3));
+
+//task 6
+function fibonacci(n) {
+  if(n === 1){
+    return [0, 1];
+  } else {
+    let arr = fibonacci(n - 1);    
+    arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
+
+    return arr;
+  }
+}
+console.log(fibonacci(8));

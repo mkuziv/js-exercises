@@ -48,3 +48,12 @@ function firstLetterUppercase(str) {
   .join(' ');
 }
 console.log(firstLetterUppercase('the quick brown fox'));
+
+//task 6 
+function findLongestWord(str) {
+  let arr = str.split(' ');
+  let arrLength = arr.map(item => item.length);
+  let maxStr = Math.max(...arrLength);
+  return arr.filter(item => item.length === maxStr).join('');  
+}
+console.log(findLongestWord('Web Development Tutorial'));

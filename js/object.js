@@ -61,3 +61,15 @@ function showReadingStatus(arr){
   .join(' ');
 }
 console.log(showReadingStatus(library));
+
+//task 5
+function Cylinder(radius, height) {
+  this.radius = radius;
+  this.height = height;
+
+  this.getVolume = function() {
+    return 3.14 * this.radius ** 2 * this.height;
+  }
+}
+let cylinder = new Cylinder(2, 7);
+console.log(cylinder.getVolume().toFixed(4));

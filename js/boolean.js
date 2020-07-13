@@ -27,3 +27,9 @@ function isNull2(value) {
 }
 console.log(isNull2(2));
 
+//task 5
+function isNumber(num) {
+  return !isNaN(num) && Object.prototype.toString.call(num) === '[object Number]';
+}
+console.log(isNumber(5));
+

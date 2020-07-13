@@ -27,3 +27,13 @@ function getNumOfCharacters(str, num) {
   return str.slice(0, num);
 }
 console.log(getNumOfCharacters("Robin Singh",4));
+
+//task 5
+function abbrevName(str) {
+  let arr =  str.split(' ');
+  if (arr.length > 1) {
+    return `${arr[0]} ${arr[1][0]}.`;
+  }
+  return `${arr[0]}`;
+}
+console.log(abbrevName('Robin Singh'));

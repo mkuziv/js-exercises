@@ -32,3 +32,15 @@ function largestNumber2(...args){
   return Math.max.call(...args);
 }
 console.log(largestNumber2(1, -3, 8, 0, 10));
+
+//task 5
+function oddEvenNum (n) {
+  for (let i = 0;i <= n; i++ ){
+    if(i % 2 === 0) {
+      console.log(`even ${i}`);
+    } else {
+      console.log(`odd ${i}`);
+    }
+  }
+}
+oddEvenNum(15)

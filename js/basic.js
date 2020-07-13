@@ -47,3 +47,20 @@ function triangleArea(a, b, c) {
   return Math.sqrt(p * (p - a) * (p - b) * (p - c));
 }
 console.log(triangleArea(5, 6, 7));
+
+//task 6
+function isLeapYear(year){
+  return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+}
+console.log(isLeapYear(2020));
+
+//task 7
+function firstJanuarySunday(startYear, secondYear) {
+  for(let i = startYear; i < secondYear; i++){
+    let date = new Date(i, 0, 1);
+    if (date.getDay() === 0) {
+      console.log(`1st January is being a Sunday  ${i}`);
+    }
+  }
+}
+firstJanuarySunday(2000, 2050);

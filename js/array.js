@@ -52,3 +52,9 @@ function lastArrArg(arr, num) {
   return arr.slice(-num);
 }
 console.log(lastArrArg([7, 9, 0, -2], 3));
+
+//task 5
+function joinToStr(arr, separator) {
+  return arr.join(` ${separator} `);
+}
+console.log(joinToStr(["Red", "Green", "White", "Black"], '/'));
