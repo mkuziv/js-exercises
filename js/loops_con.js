@@ -43,4 +43,24 @@ function oddEvenNum (n) {
     }
   }
 }
-oddEvenNum(15)
+oddEvenNum(15);
+
+//task 6
+let students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+function getMark(arg) {  
+  let average = arg.reduce((acum, item) => (acum + item[1]), 0)/arg.length;
+  console.log(average);
+  debugger
+  if(average < 60) {
+    console.log('Grade f');
+  } else if (average < 70) {    
+    console.log('Grade d');
+  } else if (average < 80) {    
+    console.log('Grade c');
+  }  else if (average < 90) {    
+    console.log('Grade b');
+  } else if (average < 100) {
+    console.log('Grade a');
+  }
+}
+console.log(getMark(students))

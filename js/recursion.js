@@ -50,15 +50,21 @@ function exponentNumber(x, n) {
 }
 console.log(exponentNumber(2, 3));
 
-//task 6
-function fibonacci(n) {
-  if(n === 1){
-    return [0, 1];
+//task 7
+function isEven(num){  
+  if(num < 0) {
+    num*= -1;
+  }
+  if(num === 0){
+    console.log(true);
+    return;
+  }
+  if(num === 1) {
+    console.log(false);
+    return;
   } else {
-    let arr = fibonacci(n - 1);    
-    arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
-
-    return arr;
+    num = num - 2;
+    isEven(num);
   }
 }
-console.log(fibonacci(8));
+console.log(isEven(110));

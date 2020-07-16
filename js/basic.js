@@ -64,3 +64,15 @@ function firstJanuarySunday(startYear, secondYear) {
   }
 }
 firstJanuarySunday(2000, 2050);
+
+//task 8
+function guessNumber() {
+  let guessNum = prompt('Enter your number please');
+  let randomNum = Math.floor(Math.random() * (10 - 1) + 1);
+  console.log(randomNum)
+  if (+guessNum === randomNum) {
+    return 'Good Work';
+  }
+  return 'Not matched';
+}
+console.log(guessNumber())

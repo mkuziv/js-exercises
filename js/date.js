@@ -42,3 +42,9 @@ function compareDates(d1, d2) {
 console.log(compareDates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:00')));
 console.log(compareDates(new Date('11/14/2013 00:01'), new Date('11/14/2013 00:00')));
 console.log(compareDates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:01')));
+
+//task 6
+function addMinutes(date, minutes) {
+  return new Date(date.getTime() + minutes*60000);
+}
+console.log(addMinutes(new Date(2014,10,2), 30).toString());

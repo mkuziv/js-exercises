@@ -58,3 +58,9 @@ function joinToStr(arr, separator) {
   return arr.join(` ${separator} `);
 }
 console.log(joinToStr(["Red", "Green", "White", "Black"], '/'));
+
+//task 7
+function sortItem(arr) {
+  return arr.sort((a, b) => a-b)
+}
+console.log(sortItem([ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]))

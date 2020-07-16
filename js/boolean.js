@@ -28,8 +28,18 @@ function isNull2(value) {
 console.log(isNull2(2));
 
 //task 5
-function isNumber(num) {
+function isNumber1(num) {
   return !isNaN(num) && Object.prototype.toString.call(num) === '[object Number]';
 }
-console.log(isNumber(5));
+console.log(isNumber1(5));
+function isNumber2(num) {
+  return 'number' === typeof num ? true : false;
+}
+console.log(isNumber2(5));
+
+//task 6
+function isObject(obj) {
+  return Object.prototype.toString.call(obj) === '[object Object]';
+}
+console.log(isObject({name: 'Robert'}));
 

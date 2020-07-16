@@ -73,3 +73,17 @@ function Cylinder(radius, height) {
 }
 let cylinder = new Cylinder(2, 7);
 console.log(cylinder.getVolume().toFixed(4));
+
+//task 8
+function clock() {
+  setInterval(() => {
+    let time = new Date();
+
+    let hour = time.getHours() < 10 ? '0' + time.getHours() : time.getHours();
+    let minutes = time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes();
+    let seconds = time.getSeconds() < 10 ? '0' + time.getSeconds() : time.getSeconds();    
+
+    console.log(`${hour}:${minutes}:${seconds}`);
+  }, 1000)
+}
+clock();

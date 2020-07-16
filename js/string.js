@@ -37,3 +37,13 @@ function abbrevName(str) {
   return `${arr[0]}`;
 }
 console.log(abbrevName('Robin Singh'));
+
+//task 6
+let hideEmail = (str) => {
+  let arr = str.split('@');  
+  let firstPart = arr[0];
+  let secondPart = arr[1];
+  firstPart = firstPart.slice(0, firstPart.length/2);
+  return `${firstPart}...@${secondPart}`;
+}
+console.log(hideEmail('robin_singh@example.com'))

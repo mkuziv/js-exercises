@@ -57,3 +57,19 @@ function findLongestWord(str) {
   return arr.filter(item => item.length === maxStr).join('');  
 }
 console.log(findLongestWord('Web Development Tutorial'));
+
+//task 7
+function countVowelsInStr(str) {
+  let countVowels = 0;
+  for (let i = 0; i < str.length; i++) {
+    let g = str[i].toLowerCase()
+    if (g === "a" ||g ===  "e" ||g === "i" ||g === "o" ||g === "u") {
+      
+      countVowels++;
+    }
+  }
+  return countVowels;
+
+}
+console.log(countVowelsInStr('The quick brown fox'));
+
