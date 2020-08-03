@@ -43,3 +43,9 @@ function isObject(obj) {
 }
 console.log(isObject({name: 'Robert'}));
 
+//task 7
+function isJson(obj) {
+  return  toString.call(obj) === '[object Object]';
+}
+console.log(isJson({name: 'Robert'}));
+console.log(isJson('bar'));

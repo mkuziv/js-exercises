@@ -75,4 +75,11 @@ function guessNumber() {
   }
   return 'Not matched';
 }
-console.log(guessNumber())
+console.log(guessNumber());
+//task 9
+function daysUntilChristmas () {
+  let dayChristmas = new Date('2021', '0', '07' );
+  let today = new Date();
+  console.log(Math.floor((dayChristmas - today)/1000/3600/24));
+}
+daysUntilChristmas();

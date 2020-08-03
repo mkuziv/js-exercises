@@ -48,3 +48,14 @@ function addMinutes(date, minutes) {
   return new Date(date.getTime() + minutes*60000);
 }
 console.log(addMinutes(new Date(2014,10,2), 30).toString());
+
+//task 7
+function dateIsWeekend(param) {
+  let date = new Date(param);
+  if ( date.getDay() === 6 || date.getDay() === 0) {
+    return 'weekdays';
+  }
+  return undefined;
+  
+}
+console.log(dateIsWeekend('Nov 16, 2014'))

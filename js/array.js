@@ -63,4 +63,10 @@ console.log(joinToStr(["Red", "Green", "White", "Black"], '/'));
 function sortItem(arr) {
   return arr.sort((a, b) => a-b)
 }
-console.log(sortItem([ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]))
+console.log(sortItem([ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]));
+
+//task 9
+function firstLetterSmall(str) {
+  return str.split(' ').map(item => item[0].toLowerCase() + item.slice(1).toUpperCase()).join(' ')
+}
+console.log(firstLetterSmall('The Quick Brown Fox'))

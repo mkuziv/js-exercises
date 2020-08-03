@@ -50,7 +50,6 @@ let students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], [
 function getMark(arg) {  
   let average = arg.reduce((acum, item) => (acum + item[1]), 0)/arg.length;
   console.log(average);
-  debugger
   if(average < 60) {
     console.log('Grade f');
   } else if (average < 70) {    
@@ -63,4 +62,20 @@ function getMark(arg) {
     console.log('Grade a');
   }
 }
-console.log(getMark(students))
+console.log(getMark(students));
+
+//task 7
+function fizzBuzz() {
+  for (i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0){
+      console.log('fizzbuzz');
+    } else if (i % 5 === 0){
+    console.log('bazz');
+    }else if (i % 3 === 0){
+      console.log('fizz');
+    } else {
+      console.log(i);
+    }
+  }
+}
+fizzBuzz();

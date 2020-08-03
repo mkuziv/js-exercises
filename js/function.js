@@ -73,3 +73,13 @@ function countVowelsInStr(str) {
 }
 console.log(countVowelsInStr('The quick brown fox'));
 
+//task 8 
+function isPrime(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0){
+      return false;
+    }
+  }
+  return num > 1;
+}
+console.log(isPrime(2));

@@ -46,4 +46,10 @@ let hideEmail = (str) => {
   firstPart = firstPart.slice(0, firstPart.length/2);
   return `${firstPart}...@${secondPart}`;
 }
-console.log(hideEmail('robin_singh@example.com'))
+console.log(hideEmail('robin_singh@example.com'));
+
+//task 7
+function stringParameterize(str) {
+  return str.toLowerCase().split(' ').join('-');
+}
+console.log(stringParameterize("Robin Singh from USA."));
