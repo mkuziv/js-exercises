@@ -49,3 +49,9 @@ function isJson(obj) {
 }
 console.log(isJson({name: 'Robert'}));
 console.log(isJson('bar'));
+
+// task 8
+function isRegExp(obj) {
+  return Object.prototype.toString.call(obj) === '[object RegExp]';
+}
+console.log(isRegExp(/test/));

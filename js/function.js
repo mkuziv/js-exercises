@@ -83,3 +83,9 @@ function isPrime(num) {
   return num > 1;
 }
 console.log(isPrime(2));
+
+// task 9 
+function typeOf(type) {
+  return `Type is ${typeof type}`;
+}
+console.log(typeOf({}));

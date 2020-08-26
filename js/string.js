@@ -53,3 +53,9 @@ function stringParameterize(str) {
   return str.toLowerCase().split(' ').join('-');
 }
 console.log(stringParameterize("Robin Singh from USA."));
+
+//task 8
+function capitalizeFirstLetter(str) {
+  return str[0].toUpperCase() + str.slice(1);
+}
+console.log(capitalizeFirstLetter('js string exercises'));

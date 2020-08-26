@@ -79,3 +79,18 @@ function fizzBuzz() {
   }
 }
 fizzBuzz();
+
+// task 9 
+function isArmstrongNum(num) {
+  let arr = num.toString().split(''); 
+  
+  let sum = arr.reduce((acc, item) => {
+    return acc + ((+item) ** 3);
+  }, 0);
+
+  if(sum === num){
+    return `${num} is Armstrong number`;
+  }
+  return `${num} is not Armstrong number`;
+}
+console.log( isArmstrongNum(372));

@@ -101,3 +101,9 @@ function Circle(radius) {
 let circle = new Circle(3);
 console.log('Area =', circle.getArea().toFixed(3));
 console.log('Circumference =', circle.getCircumference().toFixed(3));
+
+// task 11
+function allProperties(data) {  
+  return Object.getOwnPropertyNames(data).filter(item => typeof data[item] === "function");
+}
+console.log(allProperties(Object))

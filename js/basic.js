@@ -83,3 +83,15 @@ function daysUntilChristmas () {
   console.log(Math.floor((dayChristmas - today)/1000/3600/24));
 }
 daysUntilChristmas();
+
+// task 11
+function cToF(num) {
+  let f = (9 * num + (32 * 5)) / 5
+  return `${num}C is ${f}F`;
+}
+console.log(cToF(30));
+function fToc(num) {
+  let c = (5 * (num - 32)) / 9;
+  return `${num}F is ${c}C`;
+}
+console.log(fToc(86));

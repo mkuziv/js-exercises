@@ -69,4 +69,15 @@ console.log(sortItem([ 3, 8, 7, 6, 5, -4, 3, 2, 1 ]));
 function firstLetterSmall(str) {
   return str.split(' ').map(item => item[0].toLowerCase() + item.slice(1).toUpperCase()).join(' ')
 }
-console.log(firstLetterSmall('The Quick Brown Fox'))
+console.log(firstLetterSmall('The Quick Brown Fox'));
+
+// task 10
+let a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+
+function arrLog(arr) {
+  return arr.reduce((acc, item, index) => {
+    console.log(`Row ${index}`);
+    item.map(item => console.log(item));
+  }, 0);  
+}
+console.log(arrLog(a))

@@ -58,4 +58,12 @@ function dateIsWeekend(param) {
   return undefined;
   
 }
-console.log(dateIsWeekend('Nov 16, 2014'))
+console.log(dateIsWeekend('Nov 16, 2014'));
+
+// task 8
+function lastDayOfMonth(year, month) {
+  let lastDay = new Date(year, month + 1 , 0);
+  
+  return lastDay.getDate();
+}
+console.log(lastDayOfMonth(2014, 0));
