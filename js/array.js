@@ -80,4 +80,11 @@ function arrLog(arr) {
     item.map(item => console.log(item));
   }, 0);  
 }
-console.log(arrLog(a))
+console.log(arrLog(a));
+
+//task 11
+let sumSq = (arr) => {
+  return arr.reduce((acc, item) => acc + (item ** 2))
+}
+console.log(sumSq([0, 1, 2, 3, 4, 5]));
+

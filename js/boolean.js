@@ -55,3 +55,15 @@ function isRegExp(obj) {
   return Object.prototype.toString.call(obj) === '[object RegExp]';
 }
 console.log(isRegExp(/test/));
+
+// task 9
+function isChar(char) {
+  if (Object.prototype.toString.call(char) !== '[object String]') {
+    return false;
+  }
+
+  return char.length === 1;
+}
+ 
+console.log(isChar('k'));
+

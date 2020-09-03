@@ -94,3 +94,15 @@ function isArmstrongNum(num) {
   return `${num} is not Armstrong number`;
 }
 console.log( isArmstrongNum(372));
+
+// task 10
+let asterixPatern = (a) => {
+  for (let i = 1; i <= a; i++) {
+    let ast = '';
+    for(let j = 0; j < i; j++) {      
+      ast +="*";      
+    }
+    console.log(ast);
+  }
+}
+asterixPatern(7);

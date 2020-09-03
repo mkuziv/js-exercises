@@ -89,3 +89,18 @@ function typeOf(type) {
   return `Type is ${typeof type}`;
 }
 console.log(typeOf({}));
+
+// task 11
+let secondMaxMinNum = (arr) => {
+  arr.sort((a,b)=> a - b);
+  // let arrSort = []
+  // arr.reduce((acc, item)=> {
+  //   let min = (acc < item ? acc : item)
+  //   arrSort.push(min)
+  //   return min;
+  // })
+  // console.log(arrSort)
+
+  return `Second max num: ${arr[arr.length - 2]} Second min num: ${arr[1]}`;
+}
+console.log(secondMaxMinNum([2,1,5,8,3]));

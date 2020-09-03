@@ -59,3 +59,10 @@ function capitalizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 console.log(capitalizeFirstLetter('js string exercises'));
+
+// task 9
+function capitalizeFirstLetterInStr(str) {
+  return str.split(' ').map(item => item = item[0].toUpperCase() + item.slice(1)).join(" ");
+  
+}
+console.log(capitalizeFirstLetterInStr('js string exercises'));

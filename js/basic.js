@@ -95,3 +95,6 @@ function fToc(num) {
   return `${num}F is ${c}C`;
 }
 console.log(fToc(86));
+
+// task 12
+console.log(document.URL);

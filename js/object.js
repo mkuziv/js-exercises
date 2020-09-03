@@ -106,4 +106,18 @@ console.log('Circumference =', circle.getCircumference().toFixed(3));
 function allProperties(data) {  
   return Object.getOwnPropertyNames(data).filter(item => typeof data[item] === "function");
 }
-console.log(allProperties(Object))
+console.log(allProperties(Object));
+
+//task 12
+function getProperties(obj) {
+  let arrProp = [];
+  for (let prop in obj) {
+    arrProp.push(prop);
+  }
+  return arrProp;
+}
+function Student(name) {
+  this.name = name;
+}
+Student.prototype.rollno = true;
+console.log(getProperties(new Student("Sara")));

@@ -61,9 +61,18 @@ function dateIsWeekend(param) {
 console.log(dateIsWeekend('Nov 16, 2014'));
 
 // task 8
+let dateDiffInDays = (date1, date2) => {
+  let d1 = new Date(date1).getTime();
+  let d2 = new Date(date2).getTime();
+  return Math.trunc((d1 - d2)/1000/86400);
+}
+console.log(dateDiffInDays('11/02/2014', '04/04/2014'));
+
+// task 9
 function lastDayOfMonth(year, month) {
   let lastDay = new Date(year, month + 1 , 0);
   
   return lastDay.getDate();
 }
 console.log(lastDayOfMonth(2014, 0));
+
