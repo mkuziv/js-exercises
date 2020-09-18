@@ -93,14 +93,21 @@ console.log(typeOf({}));
 // task 11
 let secondMaxMinNum = (arr) => {
   arr.sort((a,b)=> a - b);
-  // let arrSort = []
-  // arr.reduce((acc, item)=> {
-  //   let min = (acc < item ? acc : item)
-  //   arrSort.push(min)
-  //   return min;
-  // })
-  // console.log(arrSort)
-
   return `Second max num: ${arr[arr.length - 2]} Second min num: ${arr[1]}`;
 }
 console.log(secondMaxMinNum([2,1,5,8,3]));
+
+// task 13
+function factors(num) {
+  let numbers = [];
+  for (let i = 1; i < num / 2; i++){
+    if (num % i === 0) {
+      numbers.push(i);
+    }
+  }
+  if (num / 1 !== 1 ){
+    numbers.push(num);
+  }
+  return numbers;
+}
+console.log(factors(18));

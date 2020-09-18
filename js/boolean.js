@@ -64,6 +64,12 @@ function isChar(char) {
 
   return char.length === 1;
 }
- 
+
 console.log(isChar('k'));
 
+// task 10
+
+function isSameType(val1, val2) {
+  return typeof val1 === typeof val2;
+}
+console.log(isSameType(1, 1));

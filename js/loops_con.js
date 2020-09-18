@@ -106,3 +106,15 @@ let asterixPatern = (a) => {
   }
 }
 asterixPatern(7);
+
+// task 11
+function greatestCommonDivisor(num1, num2) {
+  let gsd;
+  for ( let i = 1; i < num1 && i < num2; i++) {
+    if (num1 % i === 0  && num2 % i === 0){
+      gsd = i;
+    }
+  }
+  return gsd;
+}
+console.log(greatestCommonDivisor(336, 360));

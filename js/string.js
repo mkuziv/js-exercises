@@ -66,3 +66,20 @@ function capitalizeFirstLetterInStr(str) {
   
 }
 console.log(capitalizeFirstLetterInStr('js string exercises'));
+
+// task 10 
+function swapCase(str) {
+  return str.split('')
+  .map(item => {
+
+    if(65 <= item.charCodeAt(0) && item.charCodeAt(0) <= 90 ){
+      return item.toLowerCase();
+    } else {
+      return item.toUpperCase();
+    }
+
+  })
+  .join('');
+}
+
+console.log(swapCase("aAbDc"));

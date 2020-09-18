@@ -76,3 +76,12 @@ function lastDayOfMonth(year, month) {
 }
 console.log(lastDayOfMonth(2014, 0));
 
+// task 10
+function yesterday(date) {
+  date = new Date(date).getTime() - 86400000;
+  let yesterday = new Date(date);
+  
+  return yesterday;
+}
+console.log(yesterday('Nov 15, 2014'));
+

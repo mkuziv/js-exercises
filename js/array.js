@@ -88,3 +88,14 @@ let sumSq = (arr) => {
 }
 console.log(sumSq([0, 1, 2, 3, 4, 5]));
 
+
+// task 12
+function sumOrProductArr(arr) {
+
+  let sumVal = arr.reduce((acc,item) => acc + item , 0);
+  let productArr = arr.reduce((acc,item) => acc * item , 1);
+
+  return `Sym is ${sumVal} Product is ${productArr}`;
+}
+console.log(sumOrProductArr([1, 2, 3, 4, 5], "+"));
+

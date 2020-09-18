@@ -98,3 +98,10 @@ console.log(fToc(86));
 
 // task 12
 console.log(document.URL);
+
+// task 14
+function getExtensionName(fileName) {
+  fileName = fileName.split(".");
+  return fileName[1];
+}
+console.log(getExtensionName('javascript.js'));

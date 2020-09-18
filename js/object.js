@@ -108,7 +108,7 @@ function allProperties(data) {
 }
 console.log(allProperties(Object));
 
-//task 12
+//task 13
 function getProperties(obj) {
   let arrProp = [];
   for (let prop in obj) {
@@ -121,3 +121,13 @@ function Student(name) {
 }
 Student.prototype.rollno = true;
 console.log(getProperties(new Student("Sara")));
+
+// task 14
+function getObjectValues(obj) {
+  let arrVal = [];
+  for (let prop in obj) {
+    arrVal.push(obj[prop]);
+  }
+  return arrVal;
+}
+console.log(getObjectValues(new Student("Sara")));
